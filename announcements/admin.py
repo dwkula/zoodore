@@ -4,7 +4,6 @@ from .models import Announcement
 
 
 class AnnouncementAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('title',)}
     list_display = ('author', 'title', 'slug', 'creation_date', 'city')
 
 
